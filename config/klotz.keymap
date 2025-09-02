@@ -44,7 +44,7 @@
         combo_tvp {
             timeout-ms = <100>;
             key-positions = <11 12 13>;
-            bindings = <&tog TVP1>;
+            bindings = <&tog 4>;
         };
     };
 
@@ -101,10 +101,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&kp W  &kp F  &kp M  &kp P  &kp V               &kp LS(NUHS)  &kp PERIOD  &kp LS(SLASH)  &kp LS(PERIOD)  &kp LS(SEMI)
-&kt R  &kt S  &kt N  &kp T  &kp B               &kp COMMA     &kp A       &kp E          &kp I           &kp H
-&kp X  &kp C  &kp L  &kp D  &kp G               &gif          &kp U       &kp O          &kp Z           &kp K
-                     &sl 2  &lt NAV LEFT_SHIFT  &kp SPACE     &sl 3
+&kp W  &kp F  &kp M  &kp P  &kp V             &kp LS(NUHS)  &kp PERIOD  &kp LS(SLASH)  &kp LS(PERIOD)  &kp LS(SEMI)
+&kt R  &kt S  &kt N  &kp T  &kp B             &kp COMMA     &kp A       &kp E          &kp I           &kp H
+&kp X  &kp C  &kp L  &kp D  &kp G             &gif          &kp U       &kp O          &kp Z           &kp K
+                     &sl 2  &lt 1 LEFT_SHIFT  &kp SPACE     &sl 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -186,7 +186,7 @@
 
             bindings = <
 &kp ESCAPE         &kp LA(NUMBER_7)       &kp LA(NUMBER_8)  &kp LS(NUMBER_8)  &kp LA(RIGHT_BRACKET)  &kp GRAVE          &kp LS(NUMBER_9)  &kp LA(NUMBER_9)  &kp LA(NUMBER_0)  &kp F12
-&kp SLASH          &kp LS(RIGHT_BRACKET)  &kp LS(NUMBER_0)  &kp LS(SLASH)     &kp LS(NUMBER_4)       &kp NUHS           &sk RCTRL         &sk RIGHT_SHIFT   &sk RALT          &sk RGUI
+&kp SLASH          &kp LS(RIGHT_BRACKET)  &kp LS(NUMBER_0)  &kp LS(SLASH)     &kp LS(NUMBER_4)       &kp NUHS           &sk LEFT_CONTROL  &sk LEFT_SHIFT    &sk LEFT_ALT      &sk LGUI
 &kp RIGHT_BRACKET  &kp LA(BACKSLASH)      &kp LA(Q)         &kp LS(NUMBER_7)  &kp LS(NUMBER_5)       &kp DOUBLE_QUOTES  &kp LA(MINUS)     &kp LS(NUMBER_6)  &kp LS(MINUS)     &kp LS(NUMBER_1)
                                                             &trans            &trans                 &trans             &trans
             >;
@@ -196,10 +196,10 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        tvp1_layer {
+        num_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "TVP";
+            label = "num";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -213,37 +213,13 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&kp TAB     &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)  &none  &none  &none  &none  &none
-&lt TVP2 L  &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE    &none  &none  &none  &none  &none
-&kp LSHFT   &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)  &none  &none  &none  &none  &none
-                                     &kp LC(F14)  &kp LC(F13)  &none  &none
+&kp NUMBER_7  &kp NUMBER_5  &kp NUMBER_3    &kp NUMBER_1      &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_0       &kp NUMBER_2     &kp NUMBER_4   &kp NUMBER_6
+&sk LGUI      &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &kp F11       &kp F10       &sk RIGHT_CONTROL  &sk RIGHT_SHIFT  &sk RIGHT_ALT  &sk RGUI
+&kp F7        &kp F5        &kp F3          &kp F1            &kp F9        &kp F8        &sk F12            &kp F2           &kp F4         &kp F6
+                                            &trans            &trans        &trans        &trans
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        tvp2_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "TVP 2";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            // ┃ SOLO      ┃ TOGGLE IN ┃ RESET ROT ┃ TOGGLE OUT┃ TAKE SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            // ┃ ---       ┃ LAST KEY  ┃ NEW KEY   ┃ NEXT KEY  ┃ ENTER     ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            // ┃ FULLSCR   ┃ CPY2BRUSH ┃ DEL HEAD  ┃ PSTinPLACE┃ BOOK MARK ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃ REDO/SAV1 ┃TRANS/WARP ┃   ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
-
-            bindings = <
-&kp LC(F18)  &kp LS(I)     &kp LS(HOME)  &kp LS(O)      &kp LS(F)    &trans  &trans  &trans  &trans  &trans
-&trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET      &trans  &trans  &trans  &trans  &trans
-&kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)  &trans  &trans  &trans  &trans  &trans
-                                         &kp LC(F12)    &kp LC(F11)  &trans  &trans
-            >;
-        };
     };
 };
