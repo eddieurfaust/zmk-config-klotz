@@ -1,15 +1,12 @@
-/* KLOTZ: kein Backlight -> PWM komplett aus, Backlight-Referenzen entfernen */
-
-/* Alle PWM-Controller deaktivieren (sicher ist sicher) */
+/* PWM komplett aus */
 &pwm0 { status = "disabled"; };
 &pwm1 { status = "disabled"; };
 &pwm2 { status = "disabled"; };
 &pwm3 { status = "disabled"; };
 
-/* Falls irgendwo zmk,backlight gesetzt/der Node angelegt wurde: löschen */
+/* Falls irgendwo das Backlight als chosen gesetzt wurde: Property löschen */
 &{/} {
     chosen {
         /delete-property/ zmk,backlight;
     };
-    /delete-node/ &backlight;
-};
+}
