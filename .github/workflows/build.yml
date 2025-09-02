@@ -97,3 +97,31 @@ jobs:
           path: build/artifacts
           if-no-files-found: error
           overwrite: true
+
+  bundle:
+    name: Bundle firmware.zip
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all firmware artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: firmware-*
+          path: bundle
+          merge-multiple: true
+
+      - name: Create firmware.zip
+        run: |
+          cd bundle
+          # nur zur Übersicht im Log
+          echo "Bundling these files:"
+          find . -type f -maxdepth 2 -print
+          zip -r ../firmware.zip .
+
+      - name: Upload firmware.zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: firmware
+          path: firmware.zip
+          if-no-files-found: error
+          overwrite: true
