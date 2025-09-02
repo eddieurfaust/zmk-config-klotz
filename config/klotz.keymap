@@ -103,7 +103,7 @@
             bindings = <
 &kp W  &kp F  &kp M  &kp P  &kp V               &kp LS(NUHS)  &kp PERIOD  &kp LS(SLASH)  &kp LS(PERIOD)  &kp LS(SEMI)
 &kt R  &kt S  &kt N  &kp T  &kp B               &kp COMMA     &kp A       &kp E          &kp I           &kp H
-&kp X  &kp C  &kp L  &kp D  &kp G               &none         &kp U       &kp O          &kp Z           &kp K
+&kp X  &kp C  &kp L  &kp D  &kp G               &gif          &kp U       &kp O          &kp Z           &kp K
                      &sl 2  &lt NAV LEFT_SHIFT  &kp SPACE     &sl 3
             >;
 
@@ -140,7 +140,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        sim_layer {
+        nav_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "SYM";
@@ -157,10 +157,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT  &kp CARET     &kp AMPS        &kp RA(Y)   &sqsp       &qusp
-&kp RA(Q)    &trans       &kp RA(S)  &trans    &trans     &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(P)
-&kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans     &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH
-                                     &gif      &mo ADJ    &trans        &kp C_PP
+&kp TAB           &kp LA(TAB)    &kp LS(TAB)        &kp LC(TAB)  &trans  &trans           &kp HOME       &kp UP       &kp END    &kp DELETE
+&sk LEFT_COMMAND  &sk LEFT_ALT   &sk LEFT_SHIFT     &sk LCTRL    &trans  &mt KP_NUM CAPS  &kp LEFT       &kp DOWN     &kp RIGHT  &kp BACKSPACE
+&kp LG(LEFT)      &kp LG(RIGHT)  &kp LC(LS(LA(N)))  &kp LC(F)    &trans  &key_repeat      &kp PAGE_DOWN  &kp PAGE_UP  &trans     &kp ENTER
+                                                    &trans       &trans  &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
