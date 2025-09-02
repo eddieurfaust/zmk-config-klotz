@@ -1,12 +1,1 @@
-/* PWM komplett aus */
-&pwm0 { status = "disabled"; };
-&pwm1 { status = "disabled"; };
-&pwm2 { status = "disabled"; };
-&pwm3 { status = "disabled"; };
-
-/* Falls irgendwo das Backlight als chosen gesetzt wurde: Property löschen */
-&{/} {
-    chosen {
-        /delete-property/ zmk,backlight;
-    };
-}
+/* intentionally empty: KLOTZ braucht kein PWM/Backlight */
