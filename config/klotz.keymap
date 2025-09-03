@@ -158,7 +158,7 @@
             bindings = <
 &kp W  &kp F  &kp M  &kp P  &kp V       &kp LS(NUHS)  &kp PERIOD  &kp LS(SLASH)  &kp LS(PERIOD)  &kp LS(SEMI)
 &kt R  &kt S  &kt N  &kp T  &kp B       &kp COMMA     &kp A       &kp E          &kp I           &kp H
-&kp X  &kp C  &kp L  &kp D  &kp G       &gif          &kp U       &kp O          &kp Z           &kp K
+&kp X  &kp C  &kp L  &kp D  &kp G       &sl 5         &kp U       &kp O          &kp Z           &kp K
                      &sl 2  &kp RSHIFT  &kp SPACE     &sl 3
             >;
 
@@ -272,6 +272,15 @@
 &sk LGUI      &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &kp F11       &kp F10       &sk RIGHT_CONTROL  &sk RIGHT_SHIFT  &sk RIGHT_ALT  &sk RGUI
 &kp F7        &kp F5        &kp F3          &kp F1            &kp F9        &kp F8        &sk F12            &kp F2           &kp F4         &kp F6
                                             &trans            &trans        &trans        &trans
+            >;
+        };
+
+        bt_layer {
+            bindings = <
+&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
+&trans         &trans         &trans         &trans         &trans          &trans  &trans  &trans  &trans  &trans
+&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4   &trans  &trans  &trans  &trans  &trans
+                                             &bt BT_CLR     &bt BT_CLR_ALL  &trans  &trans
             >;
         };
 
