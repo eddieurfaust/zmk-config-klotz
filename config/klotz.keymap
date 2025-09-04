@@ -157,7 +157,7 @@
 
             bindings = <
 &kp W  &kp F  &kp M  &kp P  &kp V       &kp LS(NUHS)  &kp PERIOD  &kp LS(SLASH)  &kp LS(PERIOD)  &kp LS(SEMI)
-&kt R  &kt S  &kt N  &kp T  &kp B       &kp COMMA     &kp A       &kp E          &kp I           &kp H
+&kp R  &kp S  &kp N  &kp T  &kp B       &kp COMMA     &kp A       &kp E          &kp I           &kp H
 &kp X  &kp C  &kp L  &kp D  &kp G       &sl 5         &kp U       &kp O          &kp Z           &kp K
                      &sl 2  &kp RSHIFT  &kp SPACE     &sl 3
             >;
