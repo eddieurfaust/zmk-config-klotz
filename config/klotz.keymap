@@ -242,7 +242,7 @@
             bindings = <
 &kp ESCAPE         &kp RA(NUMBER_7)       &kp RA(NUMBER_8)  &kp LS(NUMBER_8)  &kp RA(RIGHT_BRACKET)  &kp GRAVE          &kp LS(NUMBER_9)  &kp RA(NUMBER_9)  &kp RA(NUMBER_0)  &kp LS(EQUAL)
 &kp SLASH          &kp LS(RIGHT_BRACKET)  &kp LS(NUMBER_0)  &kp LS(SLASH)     &kp LS(NUMBER_4)       &kp NUHS           &sk LEFT_CONTROL  &sk LEFT_SHIFT    &sk LEFT_ALT      &sk LGUI
-&kp RIGHT_BRACKET  &kp RA(BACKSLASH)      &kp RA(Q)         &kp LS(NUMBER_7)  &kp LS(NUMBER_5)       &kp DOUBLE_QUOTES  &kp RA(MINUS)     &kp LS(NUMBER_6)  &kp LS(MINUS)     &kp LS(NUMBER_1)
+&kp RIGHT_BRACKET  &kp RA(NUBS)           &kp RA(Q)         &kp LS(NUMBER_7)  &kp LS(NUMBER_5)       &kp DOUBLE_QUOTES  &kp RA(MINUS)     &kp LS(NUMBER_6)  &kp LS(MINUS)     &kp LS(NUMBER_1)
                                                             &trans            &trans                 &trans             &trans
             >;
 
